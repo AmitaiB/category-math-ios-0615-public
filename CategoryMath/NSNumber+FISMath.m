@@ -10,13 +10,16 @@
 
 @implementation NSNumber (FISMath)
 
+-(NSNumber*)neg {
+    return [NSNumber numberWithFloat:-(self.floatValue)];
+}
+
 -(NSNumber*)add:(NSNumber*)RHS {
     return [NSNumber numberWithFloat:(self.floatValue + RHS.floatValue)];
 }
 
-
 -(NSNumber*)subtract:(NSNumber*)RHS {
-    return [NSNumber numberWithFloat:(self.floatValue - RHS.floatValue)];
+    return [self add:RHS.neg];
 }
 
 -(NSNumber*)multiply:(NSNumber*)RHS {

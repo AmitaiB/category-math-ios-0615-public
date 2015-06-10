@@ -10,6 +10,7 @@
 
 @interface NSNumber (FISMath)
 
+-(NSNumber*)neg;
 -(NSNumber*)add:(NSNumber*)RHS;
 -(NSNumber*)subtract:(NSNumber*)RHS;
 -(NSNumber*)multiply:(NSNumber*)RHS;
