@@ -13,7 +13,7 @@
 -(NSNumber*)neg;
 -(NSNumber*)add:(NSNumber*)RHS;
 -(NSNumber*)subtract:(NSNumber*)RHS;
--(NSNumber*)multiply:(NSNumber*)RHS;
--(NSNumber*)divide:(NSNumber*)RHS;
+-(NSNumber*)multiplyBy:(NSNumber*)RHS;
+-(NSNumber*)divideBy:(NSNumber*)RHS;
 
 @end

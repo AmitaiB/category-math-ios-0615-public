@@ -22,11 +22,11 @@
     return [self add:RHS.neg];
 }
 
--(NSNumber*)multiply:(NSNumber*)RHS {
+-(NSNumber*)multiplyBy:(NSNumber*)RHS {
     return [NSNumber numberWithFloat:(self.floatValue * RHS.floatValue)];
 }
 
--(NSNumber*)divide:(NSNumber *)RHS {
+-(NSNumber*)divideBy:(NSNumber *)RHS {
     return [NSNumber numberWithFloat:(self.floatValue / RHS.floatValue)];
 }
 
